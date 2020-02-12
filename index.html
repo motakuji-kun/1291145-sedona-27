@@ -112,7 +112,26 @@
        <h2>Заинтересовались?</h2>
        <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <!--Тут будет форма-->
+        <form class="hotel-found" method="post" action="https://echo.htmlacademy.ru">
+            <a href="catalog.html">Поиск гостиницы в седоне</a>
+            <p>
+             <label for="arrival_date_id">Дата заезда:</label>
+             <input type="date" name="arrival_date" id="arrival_date_id" value="2017-04-24">
+            </p>
+            <p>
+              <label for="departure_date_id">Дата выезда:</label>
+              <input type="date" name="departure_date" id="departure_date_id" value="2017-07-04">
+             </p>
+             <p>
+               <label for="adults_amount_id">Взрослые:</label>
+               <input type="number" name="adults" id="adults_amount_id" min="1" max="50" step="1" value="1">
+             </p>
+             <p>
+               <label for="children_amount_id">Дети:</label>
+              <input type="number" name="children" id="children_amount_id"  min="1" max="50" step="1" value="1">
+            </p>
+            <button type="button">Найти</button>
+        </form>
       </section>
 
       <div class="sedona-map">
