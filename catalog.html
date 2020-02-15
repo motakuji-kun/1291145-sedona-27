@@ -23,43 +23,56 @@
     <main>
       <section class="filter-hotels">
         <form>
-          <fieldset>
-            <legend>Инфраструктура:</legend>
+          <ul class="search-options">
+            <span>Инфраструктура:</span>
+           <li>
             <label for="pool_id">Бассейн</label>
             <input type="checkbox" name="pool" id="pool_id" checked>
+           </li>
+           <li>
             <label for="parking_id">Парковка</label>
             <input type="checkbox" name="parking" id="parking_id">
+           </li>
+           <li>
             <label for="wi-fi_id">WI-FI</label>
             <input type="checkbox" name="wi-fi" id="wi-fi_id">
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья:</legend>
+           </li>
+            <span>Тип жилья:</span>
+            <li>
             <label for="hotel_id">Гостиница</label>
             <input type="checkbox" name="hotel" id="hotel_id" checked>
+            </li>
+            <li>
             <label for="motel_id">Мотель</label>
             <input type="checkbox" name="motel" id="motel_id" checked>
+            </li>
+            <li>
             <label for="apartments_id">Апартаменты</label>
             <input type="checkbox" name="apartments" id="apartments_id" checked>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
+            </li>
+             <span>Стоимость в сутки (Р):</span>
             <p>от 0</p><p>До 3000</p>
-            <label>
-            <input type="range" name="Cost_per_day" min="1" max="3000" step="1">
-            </label>
-          </fieldset>
+            <li>
+             <label>
+             <input type="range" name="Cost_per_day" min="1" max="3000" step="1">
+             </label>
+            </li>
+          </ul>
+
           <button type="submit">Показать</button>
 
           <div class="searching-results">
             <p>Найдено: 3</p>
             <ul class="sorting-hotels">
-              <li>Сортировка:
+             <span>Сортировка:</span>
                 <ul>
-                  <li><button type="button">По цене</button></li>
-                  <li><button type="button">По типу</button></li>
-                  <li><button type="button">По рейтингу</button></li>
+                  <li><a href="#">По цене</a></li>
+                  <li><a href="#">По типу</a></li>
+                  <li><a href="#">По рейтингу</a></li>
+                  <li><a href="#">Стрелка вверх</a></li>
+                  <li><a href="#">Стрелка вниз</a></li>
                 </ul>
-              </li>
+
             </ul>
           </div>
         </form>
@@ -113,3 +126,6 @@
       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
       </div>
     </footer>
+  </body>
+</html>
+
